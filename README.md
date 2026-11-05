@@ -9,7 +9,7 @@ against the source data before calling it done. Adoption is the deliverable, not
 the tool.
 
 > 🇪🇸 **En español.** Responsable de operaciones que construye la automatización
-> él mismo: agentes de IA para WhatsApp y teléfono, servidores MCP, flujos n8n,
+> él mismo: agentes de IA para WhatsApp y teléfono, servidores MCP, flujos n8n y Make,
 > integraciones con APIs (Meta, Google, Instagram) y reportes automáticos, en
 > Python y JavaScript. Madrid · español nativo, inglés C1.
 
@@ -30,6 +30,7 @@ the tool.
 | Project | What it does | Stack |
 |---|---|---|
 | [**n8n-pos-daily-report**](https://github.com/josemdasilvag-blip/n8n-pos-daily-report) | Daily close report: POS tickets → KPIs and control block → Telegram before the morning meeting. Importable workflow. | n8n · JavaScript · Telegram API |
+| [**make-lead-qualification**](https://github.com/josemdasilvag-blip/make-lead-qualification) | Web-form lead → webhook → scoring rules → priority and next step → data store, with an instant answer to the form and invalid leads rejected. Importable blueprint. | Make · Webhooks · Router · Data stores |
 | [**instagram-comment-to-dm**](https://github.com/josemdasilvag-blip/instagram-comment-to-dm) | Keyword comment → Instagram DM, replacing a Meta automation not available to EU businesses. Self-renewing token, idempotent. **In production.** | Cloudflare Workers · KV · Instagram Graph API |
 | [**web-audit-engine**](https://github.com/josemdasilvag-blip/web-audit-engine) | Browser automation that audits e-commerce conversion paths and produces an evidence-backed report. **Run on 75 stores.** | Node · Playwright |
 
@@ -61,7 +62,7 @@ Private because they hold client or business data:
 ## Toolbox
 
 **Languages:** Python · JavaScript / Node.js
-**Automation:** n8n · REST APIs and webhooks · OAuth2 · cron and scheduled jobs · Playwright · Cloudflare Workers
+**Automation:** n8n · Make · REST APIs and webhooks · OAuth2 · cron and scheduled jobs · Playwright · Cloudflare Workers
 **AI:** Claude API (tool use, structured output) · Claude Code (skills, MCP servers) · OpenAI API · RAG and LangGraph (IBM certificate) · Whisper
 **APIs shipped against:** WhatsApp Cloud API · Instagram Graph API · Google Calendar · Google Business Profile · Telegram · MailerLite · ElevenLabs
 **Infra:** Linux / systemd · Git · GitHub Actions
